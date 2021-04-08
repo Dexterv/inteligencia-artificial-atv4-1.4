@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<stdlib.h>
+int fatorial(int n){
+    if (n==0)
+        return 1;
+    else
+       return n*fatorial(n-1);
+    
+}
+    int main(){
+    int n, m;
+    printf("Calculo de farorial\nDigite o numero:");
+    scanf("%d", &n);
+    m= fatorial(n);
+    printf("O fatorial eh igual a %d", m);
+    return 0;
+    
+    
+    
+}
